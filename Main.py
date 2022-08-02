@@ -10,6 +10,7 @@ class Solution:
       """
 
     # Write your code here
+    
     def __init__(self, size):
         """Inits Solution with stack, queue, size, top, front and rear.
         Arguments:
@@ -29,7 +30,8 @@ class Solution:
           True if it is empty, else returns False.
         """
         # Write your code here
-
+return self.front==-1or self.front> self.rear
+        
     def is_queue_empty(self):
         """
         Check whether the queue is empty.
@@ -37,6 +39,7 @@ class Solution:
           True if it is empty, else returns False.
         """
         # Write your code here
+        return self.front==-1 or self.front> self.rear
 
     def is_stack_full(self):
         """
@@ -45,7 +48,8 @@ class Solution:
           True if it is full, else returns False.
         """
         # Write your code here
-
+    return self.top==self.size-1
+        
     def is_queue_full(self):
         """
         Check whether the queue is full.
@@ -53,6 +57,7 @@ class Solution:
           True if it is full, else returns False.
         """
         # Write your code here
+        return self.rear== self.size-1
 
     def push_character(self, character):
         """
@@ -61,6 +66,8 @@ class Solution:
             character: A character that will be pushed to the stack.
         """
         # Write your code here
+        if not self.is_stack_full():
+            
 
     def enqueue_character(self, character):
         """
